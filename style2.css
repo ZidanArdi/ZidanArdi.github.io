@@ -16,7 +16,7 @@ html{
     align-items: center;
     justify-content: center;
     height: 100%;
-    /*color: rebeccapurple;*/
+    color: rebeccapurple;
     text-align: center;
 
 }
@@ -30,7 +30,8 @@ html{
 .page{
     font-size: 24px;
     margin-bottom: 20px;
-    
+    color: aliceblue;
+
 }
 
 
