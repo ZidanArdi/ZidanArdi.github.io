@@ -4,12 +4,11 @@ html {
     padding: 0;
 }
 
-
-
 .navbar-container {
     background-color: gray;
     width: 100%;
     height: 15vh;
+
 }
 
 .ul-navbar { 
@@ -42,7 +41,7 @@ html {
 }
 
 .container-content{
-    height: 70vh;
+    height: 100vh;
     background-color: whitesmoke;
     display: flex;
     justify-content: center;
@@ -55,12 +54,12 @@ html {
     text-decoration: none;
     font-size: 20px;
     width: 600px;
-    height: 480px;
+    height: 100vh;
     display:flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    border-radius: 90px; 
+    /* border-radius: 90px;  */
 
 }
 
@@ -83,8 +82,39 @@ html {
     color: white;
 }
 
-@media screen and (min-width: 500px)  {
-    .container-content{
-        background-color: blue;
-    }
+.hamburger{
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+    display: none;
 }
+
+@media (max-width: 600px)  {
+    .hamburger {
+        display: flex;
+    }
+
+    .ul-navbar{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: aqua;
+        width: 20%;
+        height: 100%;
+    }
+    .ul-navbar.active{
+        display: flex;
+    }
+
+    .container-footer{
+        flex-direction: column;
+        position: relative;
+
+    }
+    
+
+}
+
+
