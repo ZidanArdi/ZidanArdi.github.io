@@ -1,4 +1,4 @@
 document.getElementById('hamburger').addEventListener('click', function(){
-    const menu = document.getElementById('ul-navbar');
-    menu.classList.toggle('active');
+    const ulnavbar = document.getElementById('menu');
+    ulnavbar.classList.toggle('active');
 });  
