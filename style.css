@@ -75,7 +75,7 @@ a {
     white-space: nowrap; /* Mencegah teks wrap ke baris baru */
     margin: 0 auto;
     letter-spacing: 2px; /* Jarak antar huruf */
-    animation: typing 5s steps(40, end) infinite, blink-cursor 0.75s step-end infinite;
+    animation: typing 7s steps(40, end) infinite, blink-cursor 1s step-end infinite;
 }
 
 @keyframes typing {
