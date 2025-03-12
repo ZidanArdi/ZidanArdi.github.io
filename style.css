@@ -65,15 +65,43 @@ a {
     color: #fff;
     padding: 100px 0;
     text-align: center;
+    overflow: hidden; /* Agar teks yang berjalan tidak keluar dari container */
+    position: relative;
 }
 
-.header h1 {
-    font-size: 48px;
-    margin-bottom: 20px;
+.typewriter-h1 {
+    display: inline-block;
+    overflow: hidden; /* Menyembunyikan teks yang belum ditampilkan */
+    white-space: nowrap; /* Mencegah teks wrap ke baris baru */
+    margin: 0 auto;
+    letter-spacing: 2px; /* Jarak antar huruf */
+    animation: typing 5s steps(40, end) infinite, blink-cursor 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    0% {
+        width: 0; /* Mulai dari teks kosong */
+    }
+    50% {
+        width: 100%; /* Teks penuh ditampilkan */
+    }
+    100% {
+        width: 0; /* Teks dihapus kembali */
+    }
+}
+
+@keyframes blink-cursor {
+    from, to {
+        border-right-color: transparent; /* Kursor berkedip */
+    }
+    50% {
+        border-right-color: #fff; /* Kursor terlihat */
+    }
 }
 
 .header p {
     font-size: 20px;
+    margin-top: 20px;
 }
 
 /* About Section */
