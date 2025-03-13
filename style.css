@@ -66,6 +66,7 @@ body {
 }
 
 /* Header */
+/* Header */
 .header {
     background: linear-gradient(135deg, #667eea, #764ba2);
     color: #fff;
@@ -73,6 +74,7 @@ body {
     text-align: center;
     overflow: hidden;
     position: relative;
+    margin-bottom: 0;
 }
 
 .typewriter-h1 {
@@ -81,7 +83,7 @@ body {
     white-space: nowrap;
     margin: 0 auto;
     letter-spacing: 2px;
-    animation: typing 7s steps(40, end) infinite, blink-cursor 1s step-end infinite;
+    animation: typing 6s steps(40, end) infinite, blink-cursor 1s step-end infinite;
 }
 
 @keyframes typing {
@@ -105,9 +107,16 @@ body {
     }
 }
 
+.header h1 {
+    font-size: 2.5rem;
+    margin: 0; /* Hilangkan margin default */
+    line-height: 1.2; /* Sesuaikan jarak antar baris */
+}
+
 .header p {
     font-size: 20px;
-    margin-top: 20px;
+    margin-top: 10px; /* Kurangi margin atas */
+    margin-bottom: 5px; /* Hilangkan margin bawah */
 }
 
 /* About Section */
@@ -344,32 +353,37 @@ body {
 /* Mobile */
 @media (max-width: 480px) {
     .navbar .logo {
-        font-size: 20px;
+        font-size: 15px;
     }
 
     .navbar .nav-links {
         flex-direction: column;
         align-items: center;
         display: none;
-        gap: 10px;
+        gap: 20px;
     }
     .navbar a {
-        font-size: 15px;
+        font-size: 10px;
         display: flex;
     }
 
     .header {
-        padding: 60px 0;
+        padding: 2px;
+    }
+    .header .logo{
+        padding: 2px;
     }
 
     .header h1 {
         font-size: 1.5rem;
         display: block;
-        gap: 1.5;
+        gap: 0.5rem;
+        padding-top: 6rem;
     }
 
     .header p {
-        font-size: 0.8rem;
+        font-size: 1rem;
+        margin-bottom: 1rem;
     }
 
     .about .card {
