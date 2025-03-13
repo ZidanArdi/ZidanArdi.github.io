@@ -291,3 +291,120 @@ a {
 .footer p {
     margin: 0;
 }
+
+/* Tablet */
+@media (max-width: 768px) {
+    .navbar .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar .nav-links {
+        margin-top: 10px;
+        gap: 15px;
+    }
+
+    .header {
+        padding: 80px 0;
+    }
+
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .header p {
+        font-size: 1rem;
+    }
+
+    .about .card {
+        padding: 30px;
+    }
+
+    .service-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-item {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .contact-form {
+        width: 90%;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .navbar .logo {
+        font-size: 20px;
+    }
+
+    .navbar .nav-links {
+        flex-direction: column;
+        align-items: center;
+        display: none;
+        gap: 10px;
+    }
+    .navbar a{
+        font-size: 15px;
+        display: flex;
+    }
+
+    .header {
+        padding: 60px 0;
+    }
+
+    .header h1 {
+        font-size: 1rem;
+        display: block;
+        gap: 1.5px;
+    }
+
+    .header p {
+        font-size: 0.8rem;
+    }
+
+    .about .card {
+        padding: 20px;
+    }
+
+    .profile-image {
+        width: 120px;
+        height: 120px;
+    }
+
+    .about h3 {
+        font-size: 24px;
+    }
+
+    .about .title {
+        font-size: 18px;
+    }
+
+    .service-item {
+        width: 100%;
+    }
+
+    .service-item i {
+        font-size: 30px;
+    }
+
+    .service-item h3 {
+        font-size: 20px;
+    }
+
+    .service-item p {
+        font-size: 14px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 14px;
+    }
+
+    .contact-form button {
+        font-size: 16px;
+    }
+}
